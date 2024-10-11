@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav
@@ -52,8 +52,8 @@
               <a class="nav-link" href="#">Contact Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
-              </li>
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
           </ul>
           <div class="d-flex gap-2 text-white">
             <a href=""><i class="bi bi-github"></i></a>
@@ -67,22 +67,34 @@
 
     <div class="container">
       <section class="row mt-5">
-        <div class="col-md-12 d-flex justify-content-center">
-          <h1 class="fw-bold">About ME</h1>
+        <div class="col-md-12">
+          <h1 class="fw-bold text-center">Contact Us</h1>
+          <form>
+            <div class="my-3 mt-5">
+              <label for="nama" class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                placeholder="Masukkan nama Anda"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subjek</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Masukkan subjek pesan"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
         </div>
-        <div class="col-md-6 mt-5 d-flex justify-content-start"><img class="img-foto-cstm" src="foto.png" alt="foto fauzi ferdiansyah"></div>
-        <div class="col-md-6 mt-5 d-flex justify-content-end align-items-center p-5">
-            <div>
-                <h2 class="fw-bold">Hi, I am</h2>
-                <h2 class="display-1 fw-bold">Fauzi <br>
-                    Ferdiansyah</h2>
-                    <p class="fw-bold">Front-end Developer & Android Developer</p>
-                    <p class="text-body-secondary">I am a graduate of Synrgy Academy's Android Engineering, 
-                        Batch #7, and I am currently attending the frontend developer 
-                        bootcamp at Lomoshive Academy, Batch #1. I have a keen interest in both Android development and frontend web development. I am passionate about creating innovative mobile applications and engaging web interfaces, and I am continually striving to improve my skills in mobile and web technologies.</p>
-            
-            </div>
-            </div>
       </section>
     </div>
   </body>
