@@ -239,7 +239,10 @@ html {
   margin-bottom: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
+  .nav-links {
+    display: none;
+  }
   .project-container {
     flex-direction: column;
   }
