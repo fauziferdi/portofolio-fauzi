@@ -1,27 +1,277 @@
-body {
-  background-color: #FDC300;
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 1140px;
 }
 
-.img-foto-cstm{
-  height: 100%;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 1px 6px 6px -4px rgba(46, 46, 46, 0.2);
+  -webkit-box-shadow: 1px 6px 6px -4px rgba(46, 46, 46, 0.2);
+  -moz-box-shadow: 1px 6px 6px -4px rgba(46, 46, 46, 0.2);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.nav-links li a:hover {
+  color: rgb(75, 74, 74);
+}
+
+.content-2 {
+  display: flex;
+  padding: 2rem;
+}
+
+.content-left {
+  width: 50%;
+}
+
+.content-right {
+  width: 50%;
+}
+
+.content-1 {
+  padding: 2rem;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+
+  padding: 1rem;
   width: 100%;
 }
 
-.img-edu-cstm{
-  height: 100%;
+.img-foto {
+  width: 80%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.form-textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+.form-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card {
   width: 30%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.img-rvw-cstm {
-  height: 100%;
-  width: 70%;
+.project-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.mt-cstm {
-  margin-top: 300px !important;
+.project-card p {
+  text-align: center;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+}
+
+.testimoni-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimoni-card {
+  width: 30%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.testimoni-card .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.testimoni-card .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimoni-card .profile h4 {
+  margin: 0;
+}
+
+.testimoni-card p {
+  font-style: italic;
 }
 .mb-cstm {
   margin-bottom: 330px !important;
 }
+.mt-cstm {
+  margin-top: 200px !important;
+}
+.text-nama {
+  font-family: "Roboto Bold";
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.text-ket {
+  font-family: "Roboto Bold";
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.text-ket2 {
+  font-family: "Roboto Bold";
+}
+.text-des {
+  font-family: "Roboto Light";
+}
+.text-judul {
+  font-family: "Roboto Bold";
+}
+.text-judul-bag {
+  font-family: "Roboto Bold";
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 
+/* CSS untuk layar kecil (HP) */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+  }
 
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .content-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-left,
+  .content-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-left {
+    order: -1;
+  }
+
+  .testimoni-container {
+    flex-direction: column;
+  }
+
+  .testimoni-card {
+    width: 100%;
+  }
+}

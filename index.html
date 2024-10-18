@@ -1,128 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
-      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Fauzi</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-dark border-bottom border-body"
-      data-bs-theme="dark"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">FauziPorto</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarColor01"
-          aria-controls="navbarColor01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/education.html">Educations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/project.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/testimoni.html">Testimonials</a>
-            </li>
-          </ul>
-          <div class="d-flex gap-3">
-            <a class="text-light" href="https://github.com/fauziferdi"
-              ><i class="bi bi-github"></i
-            ></a>
-            <a
-              class="text-light"
-              href="https://www.linkedin.com/in/fauziferdiansyah/"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-            <a
-              class="text-light"
-              href="https://www.instagram.com/fauziferdiansyahh/"
-              ><i class="bi bi-instagram"></i
-            ></a>
-            <a class="text-light" href="mailto:fauziferdiansyahindo@gmail.com"
-              ><i class="bi bi-google"></i
-            ></a>
-          </div>
-        </div>
-      </div>
+    <nav class="navbar">
+      <h1 class="text-judul">Porto Fauzi</h1>
+      <ul class="nav-links">
+        <li>
+          <a href="/">About Me</a>
+        </li>
+        <li><a href="/">Project</a></li>
+        <li><a href="/">Testimonials</a></li>
+        <li><a href="/">Contact Us</a></li>
+      </ul>
     </nav>
-
     <div class="container">
-      <section class="row mt-5">
-        <div class="col-md-12 text-center">
-          <h1 class="fw-bold">About ME</h1>
+      <section class="content-2 mb-cstm mt-cstm">
+        <div class="content-left">
+          <img class="img-foto" src="img/foto.png" alt="" />
         </div>
-        <div class="d-flex justify-content-end align-items-center p-5">
-          <div class="col-md-6 mt-5">
-            <img
-              class="img-foto-cstm"
-              src="foto.png"
-              alt="foto fauzi ferdiansyah"
-            />
+        <div class="content-right">
+          <h1 class="text-ket">Hi, I am</h1>
+          <h1 class="text-nama">Fauzi Ferdiansyah</h1>
+          <h3 class="text-ket2">Front-end Developer & Android Developer</h3>
+          <p>
+            I am a graduate of Synrgy Academy's Android Engineering, Batch #7,
+            and I am currently attending the frontend developer bootcamp at
+            Lomoshive Academy, Batch #1. I have a keen interest in both Android
+            development and frontend web development. I am passionate about
+            creating innovative mobile applications and engaging web interfaces,
+            and I am continually striving to improve my skills in mobile and web
+            technologies.
+          </p>
+        </div>
+      </section>
+
+      <h1 class="text-center text-judul-bag">Project</h1>
+      <section class="content-1 mb-cstm">
+        <div class="project-container">
+          <div class="project-card">
+            <img src="img/portoweb.png" alt="Project 1" />
+            <h3>Web Portofolio</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+              delectus veniam at maiores aliquam perferendis laborum animi,
+              accusamus cum fuga distinctio corrupti ullam praesentium voluptas,
+              vitae provident harum, recusandae rerum!
+            </p>
+            <a href="#" class="project-button">Lihat Project</a>
           </div>
-          <div class="col-md-6 mt-5 ms-5">
-            <div>
-              <h2 class="fw-bold">Hi, I am</h2>
-              <h2 class="display-1 fw-bold">
-                Fauzi <br />
-                Ferdiansyah
-              </h2>
-              <p class="fw-bold">Front-end Developer & Android Developer</p>
-              <p class="text-body-secondary">
-                I am a graduate of Synrgy Academy's Android Engineering, Batch
-                #7, and I am currently attending the frontend developer bootcamp
-                at Lomoshive Academy, Batch #1. I have a keen interest in both
-                Android development and frontend web development. I am
-                passionate about creating innovative mobile applications and
-                engaging web interfaces, and I am continually striving to
-                improve my skills in mobile and web technologies.
-              </p>
-            </div>
+          <div class="project-card">
+            <img src="img/web2.png" alt="Project 2" />
+            <h3>Web Lomushive v1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+              dignissimos laboriosam. Ipsa illum rerum quas nobis ut, nisi
+              dolorem assumenda. Tenetur cupiditate porro doloribus repudiandae
+              beatae adipisci repellendus nostrum aliquam!
+            </p>
+            <a href="#" class="project-button">Lihat Project</a>
+          </div>
+          <div class="project-card">
+            <img src="img/web3.png" alt="Project 3" />
+            <h3>Web Lomushive v2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              distinctio unde reiciendis ab aspernatur, ea nobis iure ipsum
+              deleniti rem deserunt maiores natus, error, ducimus qui mollitia
+              corrupti atque. Quibusdam.
+            </p>
+            <a href="#" class="project-button">Lihat Project</a>
           </div>
         </div>
       </section>
+
+      <h1 class="text-center text-judul-bag">Testimoni</h1>
+
+      <section class="content-1 mb-cstm">
+        <div class="testimoni-container">
+          <div class="testimoni-card">
+            <div class="profile">
+              <img src="img/testi1.jpg" alt="Profile 1" />
+              <h4>Nama Orang 1</h4>
+            </div>
+            <p>"Testimoni dari orang pertama tentang website Portofolio."</p>
+          </div>
+
+          <div class="testimoni-card">
+            <div class="profile">
+              <img src="img/testi2.jpg" alt="Profile 2" />
+              <h4>Nama Orang 2</h4>
+            </div>
+            <p>"Testimoni dari orang pertama tentang website Portofolio."</p>
+          </div>
+
+          <div class="testimoni-card">
+            <div class="profile">
+              <img src="img/testi3.jpg" alt="Profile 3" />
+              <h4>Nama Orang 3</h4>
+            </div>
+            <p>"Testimoni dari orang pertama tentang website Portofolio."</p>
+          </div>
+
+          <div class="testimoni-card">
+            <div class="profile">
+              <img src="img/testi1.jpg" alt="Profile 1" />
+              <h4>Nama Orang 1</h4>
+            </div>
+            <p>"Testimoni dari orang pertama tentang website Portofolio."</p>
+          </div>
+
+          <div class="testimoni-card">
+            <div class="profile">
+              <img src="img/testi2.jpg" alt="Profile 2" />
+              <h4>Nama Orang 2</h4>
+            </div>
+            <p>"Testimoni dari orang pertama tentang website Portofolio."</p>
+          </div>
+
+          <div class="testimoni-card">
+            <div class="profile">
+              <img src="img/testi3.jpg" alt="Profile 3" />
+              <h4>Nama Orang 3</h4>
+            </div>
+            <p>"Testimoni dari orang pertama tentang website Portofolio."</p>
+          </div>
+        </div>
+      </section>
+
+      <h1 class="text-center text-judul-bag">Contact Us</h1>
+      <section class="content-1 mb-cstm">
+        <form class="form-container" action="POST">
+          <label class="form-label" for="nama">Nama</label>
+          <input class="form-input" type="text" id="nama" />
+          <label class="form-label" for="subject">Subject</label>
+          <input class="form-input" type="text" id="subject" />
+          <label class="form-label" for="pesan">Pesan</label>
+          <textarea class="form-textarea" name="pesan" id="pesan"></textarea>
+          <button class="form-button">Kirim</button>
+        </form>
+      </section>
     </div>
-    <footer class="bg-dark text-center mt-5">
-      <p class="fs-5 text-light p-3 mb-0">
-        Portofolio | Fauzi Ferdiansyah 2024
-      </p>
+
+    <footer class="footer">
+      <p>&copy; 2023 Website Saya</p>
     </footer>
   </body>
 </html>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-  crossorigin="anonymous"
-></script>
