@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Fauzi</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <nav class="navbar">
       <h1 class="text-judul">Porto Fauzi</h1>
       <ul class="nav-links">
-        <li>
-          <a href="/">About Me</a>
-        </li>
-        <li><a href="/">Project</a></li>
-        <li><a href="/">Testimonials</a></li>
-        <li><a href="/">Contact Us</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
       </ul>
     </nav>
     <div class="container">
@@ -39,7 +37,7 @@
         </div>
       </section>
 
-      <h1 class="text-center text-judul-bag">Project</h1>
+      <h1 class="text-center text-judul-bag" id="project">Project</h1>
       <section class="content-1 mb-cstm">
         <div class="project-container">
           <div class="project-card">
@@ -78,7 +76,7 @@
         </div>
       </section>
 
-      <h1 class="text-center text-judul-bag">Testimoni</h1>
+      <h1 class="text-center text-judul-bag" id="testimonials">Testimoni</h1>
 
       <section class="content-1 mb-cstm">
         <div class="testimoni-container">
@@ -132,15 +130,15 @@
         </div>
       </section>
 
-      <h1 class="text-center text-judul-bag">Contact Us</h1>
+      <h1 class="text-center text-judul-bag" id="contactus">Contact Us</h1>
       <section class="content-1 mb-cstm">
         <form class="form-container" action="POST">
           <label class="form-label" for="nama">Nama</label>
-          <input class="form-input" type="text" id="nama" />
+          <input class="form-input" type="text" id="nama" name="nama" />
           <label class="form-label" for="subject">Subject</label>
-          <input class="form-input" type="text" id="subject" />
+          <input class="form-input" type="text" id="subject" name="subject" />
           <label class="form-label" for="pesan">Pesan</label>
-          <textarea class="form-textarea" name="pesan" id="pesan"></textarea>
+          <textarea class="form-textarea" id="pesan" name="pesan"></textarea>
           <button class="form-button">Kirim</button>
         </form>
       </section>
@@ -151,3 +149,4 @@
     </footer>
   </body>
 </html>
+<script src="main.js"></script>
