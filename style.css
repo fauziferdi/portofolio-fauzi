@@ -284,4 +284,8 @@ html {
   .text-ket {
     margin-top: 15px;
   }
+
+  .text-des-utama {
+    text-align: center;
+  }
 }
